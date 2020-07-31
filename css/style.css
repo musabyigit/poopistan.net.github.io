@@ -1,0 +1,104 @@
+@import url(css/reset.css);
+
+:root{
+    --renk1: #FCE5CD;
+    --renk2: #F7D7B5;
+    --renk3: #E69139;
+    --renk4: #351C75;
+    
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.kapsayici{
+    
+    width: 720px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    color: var(--renk4);
+}
+p{
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--renk3)
+}
+.left-area p{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--renk3)
+}
+.container{
+    background-color: var(--renk1);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns:[left-area] 1fr [right-area] 250px ;
+    grid-template-areas: 'left-area right-area'
+                         'footer-area right-area';
+}
+
+.left-area{
+    grid-area: left-area;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    
+    
+    
+}
+.left-area h1{
+    padding-bottom: 10px;
+}
+.right-area ul{
+    list-style-type: none;
+    text-decoration: solid;
+}
+.right-area a{
+    
+    text-decoration: none;
+}
+.right-area h2 {
+    color: black;
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.right-area ul li a{
+    display: block;
+    padding: 3px 0;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+
+.right-area{
+    grid-area: right-area;
+    overflow: auto;
+    background: var(--renk2);
+    padding: 20px;
+    
+    
+    
+}
+
+.footer{
+    grid-area: footer-area;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+}
+
+.footer p{
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 12px;
+    letter-spacing: .2px;
+
+}
+ 
