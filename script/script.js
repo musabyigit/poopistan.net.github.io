@@ -1,6 +1,6 @@
 function ghost(){
     var header= 'HAYALET BOK';
-    var text= 'Sıçtığınız zannedip de tuvalete baktığınızda göremediğiniz bok.';
+    var text= 'Sıçtığınızı zannedip de tuvalete baktığınızda göremediğiniz bok.';
     document.getElementById('baslik').innerHTML = header;
     document.getElementById('baslik2').innerHTML = text;
 }
